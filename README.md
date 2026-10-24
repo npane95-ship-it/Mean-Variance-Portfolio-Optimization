@@ -62,7 +62,7 @@ A softmax transformation converts unrestricted optimization variables into posit
 
 The tangency portfolio is approximated through Monte Carlo sampling by selecting the simulated portfolio with the highest Sharpe ratio.
 
-#Visualization
+# Visualization
 
 The visualization includes:
 
