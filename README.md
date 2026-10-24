@@ -7,7 +7,8 @@ This project implements a quantitative portfolio optimization model in MATLAB us
 
 The objective is to evaluate different asset allocations and identify portfolios that optimize the relationship between expected return and risk.
 
-Key Features
+
+# Key Features:
 
 Monte Carlo simulation of 15,000 randomly generated portfolios.
 
@@ -27,7 +28,8 @@ Capital Market Line visualization.
 
 Individual asset risk and return comparisons.
 
-Mathematical Framework
+
+# Mathematical Framework
 
 Expected Portfolio Return
 
@@ -47,17 +49,18 @@ S = (E(Rp) - Rf) / σp
 
 Where:
 
-w = Portfolio weight vector
+  w = Portfolio weight vector
 
-μ = Expected asset return vector
+  μ = Expected asset return vector
 
-Σ = Covariance matrix
+  Σ = Covariance matrix
 
-Rf = Risk-free rate
+  Rf = Risk-free rate
 
-σp = Portfolio standard deviation
+  σp = Portfolio standard deviation
 
-Optimization Methodology
+
+# Optimization Methodology
 
 The minimum-variance portfolio is calculated using MATLAB's built-in fminsearch function.
 
@@ -65,9 +68,9 @@ A softmax transformation converts unrestricted optimization variables into posit
 
 The tangency portfolio is approximated through Monte Carlo sampling by selecting the simulated portfolio with the highest Sharpe ratio.
 
-Visualization
 
 
+#Visualization
 
 The visualization includes:
 
@@ -83,23 +86,8 @@ Capital Market Line
 
 Individual asset risk and return positions
 
-Technologies
 
-MATLAB
-
-Linear Algebra
-
-Probability and Statistics
-
-Monte Carlo Simulation
-
-Modern Portfolio Theory
-
-Numerical Optimization
-
-Financial Modeling
-
-Limitations
+# Limitations
 
 The initial implementation uses simulated asset returns rather than historical market data.
 
@@ -107,7 +95,8 @@ The Monte Carlo tangency portfolio is an approximation and is not guaranteed to 
 
 The model currently excludes transaction costs, taxes, and market impact.
 
-Future Improvements
+
+# Future Improvements
 
 Incorporate historical financial market data.
 
