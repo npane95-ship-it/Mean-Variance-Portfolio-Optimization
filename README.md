@@ -1,5 +1,5 @@
 
-## Version 2 — Historical Market Data Integration
+## Version 2  Historical Market Data Integration
 
 ### Overview
 
