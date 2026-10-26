@@ -1,3 +1,49 @@
+
+## Version 2 — Historical Market Data Integration
+
+### Overview
+
+Updated the original mean-variance portfolio optimization model to use real historical stock market data instead of simulated stock returns.
+
+### New Features
+
+- Integrated historical adjusted closing price data from Yahoo Finance.
+- Added automated historical data retrieval for AAPL, MSFT, NVDA, AMZN, and GOOGL.
+- Calculated daily historical stock returns.
+- Calculated annualized arithmetic expected returns.
+- Calculated annualized covariance matrices.
+- Added compounded annual growth rate (CAGR) calculations.
+- Updated Monte Carlo portfolio simulations to use historical market data.
+- Added an approximate efficient frontier based on simulated portfolio allocations.
+- Updated portfolio Sharpe ratio and Capital Market Line calculations using a Treasury-based risk-free rate assumption.
+
+### Methodology
+
+Daily returns are calculated from adjusted closing prices.
+
+Annualized expected returns are estimated using the arithmetic mean of daily returns multiplied by 252 trading days.
+
+The annualized covariance matrix is calculated by multiplying the daily covariance matrix by 252.
+
+CAGR is calculated using the beginning and ending adjusted prices over the historical measurement period.
+
+### Limitations
+
+- Historical returns do not guarantee future performance.
+- The efficient frontier is currently approximated using Monte Carlo simulation rather than exact constrained optimization.
+- The risk-free rate is an input that should be updated as Treasury yields change.
+- Expected returns are sensitive to the selected historical period.
+
+### Next Development Goals
+
+- Implement exact constrained portfolio optimization.
+- Add historical portfolio backtesting.
+- Incorporate transaction costs.
+- Add Value at Risk (VaR) and Conditional Value at Risk (CVaR).
+- Develop an interactive MATLAB dashboard.
+
+
+
 # Mean-Variance-Portfolio-Optimization
 MATLAB implementation of Monte Carlo portfolio simulation and Modern Portfolio Theory optimization.
 
