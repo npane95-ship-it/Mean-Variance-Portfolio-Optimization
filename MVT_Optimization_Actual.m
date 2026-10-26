@@ -1,6 +1,4 @@
 %[text] ## Portfolio Optimization Engine
-%[text] For this project I will be using hypothetical simulated daily returns and averages
-%[text] The code assumes a 1.5% daily standard deviation and a 0.05% average daily return
 %[text] For this simulation It's running 15,000 randomly generated portfolios
 %%
 
